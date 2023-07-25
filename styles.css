@@ -1,0 +1,56 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './styles/hero.css';
+@import './styles/contact.css';
+@import './styles/title.css';
+@import './styles/social.css';
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, #2b2b2b 0%, #1b1b1b 100%);
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-section, .contact-form, .social-links {
+  padding: 50px 0;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: none;
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.contact-form button {
+  padding: 15px;
+  border: none;
+  background-color: #1b1b1b;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.social-links a {
+  color: #ffffff;
+  margin-right: 15px;
+}
