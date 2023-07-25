@@ -5,13 +5,15 @@ module.exports = {
     extend: {
       colors: {
         dark: '#1a202c',
-        darker: '#121827',
+        darker: '#12151f',
         light: '#f7fafc',
-        lighter: '#edf2f7',
+        lighter: '#ffffff',
+        primary: '#9f7aea',
+        secondary: '#ed64a6',
       },
       gradientColorStops: theme => ({
-        'dark-stop': '#1a202c',
-        'light-stop': '#f7fafc',
+        'primary': '#9f7aea',
+        'secondary': '#ed64a6',
       }),
     },
   },

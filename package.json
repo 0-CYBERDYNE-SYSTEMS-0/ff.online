@@ -5,12 +5,12 @@
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
-    "dev": "nodemon main.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": ["personal", "website", "portfolio"],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "tailwindcss": "^2.2.16"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
   }
 }

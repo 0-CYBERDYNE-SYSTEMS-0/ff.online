@@ -2,30 +2,55 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import './styles/hero.css';
+@import './styles/contact.css';
+@import './styles/title.css';
+@import './styles/social.css';
+
 body {
-  @apply bg-gray-900 text-white;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, #2b2b2b 0%, #1b1b1b 100%);
 }
 
 .hero-section {
-  @apply bg-gradient-to-r from-purple-400 via-pink-500 to-red-500;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-form {
-  @apply bg-gray-800 p-6 rounded-lg;
+.title-section, .contact-form, .social-links {
+  padding: 50px 0;
 }
 
-.work-section {
-  @apply grid grid-cols-3 gap-4;
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: none;
+  background-color: #2b2b2b;
+  color: #ffffff;
 }
 
-.work-section div {
-  @apply bg-gray-700 p-4 rounded-lg;
+.contact-form button {
+  padding: 15px;
+  border: none;
+  background-color: #1b1b1b;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-button {
-  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
-}
-
-input, textarea {
-  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline;
+.social-links a {
+  color: #ffffff;
+  margin-right: 15px;
 }

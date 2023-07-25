@@ -4,30 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-dark text-white">
+<body class="bg-gray-900 text-white">
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="work.html">Work</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div id="title-section"></div>
     </header>
     <main>
-        <section id="hero-section">
-            <!-- Slideshow will be initialized here by main.js -->
-        </section>
-        <section id="work-section">
-            <!-- Work section will be populated here by main.js -->
-        </section>
-        <section id="contact-form">
-            <!-- Contact form will be populated here by main.js -->
-        </section>
+        <section id="hero-section"></section>
+        <section id="social-links"></section>
+        <section id="contact-form"></section>
     </main>
     <footer>
-        <p>© 2022 Personal Website. All rights reserved.</p>
+        <p class="text-center text-gray-500">© 2022 Personal Website. All rights reserved.</p>
     </footer>
-    <script src="assets/js/main.js"></script>
+
+    <script src="main.js"></script>
+    <script src="scripts/hero.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/title.js"></script>
+    <script src="scripts/social.js"></script>
 </body>
 </html>
